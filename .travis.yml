@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: nZoXbEBT7zAo2d4daqwfXmo5yfolJe9t8B/+N/4TunQI9SC8ZecmrBfDd5Ke6C+Jg31bjcqYKIpoKQJlqe1y32NawXDuP9Rda3OzuMWfWYf8lirPGXcNb8MDEFVSFFgCZ4f9YZZaQ9tviYFRPLZrPMKSaK3WahjhwrJB+3OKY4Q1zZ03RCL+ejaAn3yLx2KwrlYtMJ/CLtpD0ZmhfgPVu9jBC3kc0EFpofJR0is9cAXOgnquAPAfcKwHYoWFM6GXHh+zHmn3fSjGAEmY/7bP2zWz4M3vXVns7rshZF5co6o7S8fZj2QU8rwwjcG6x3X4cs0r9svv8dgwIm0dLyqW3Q4smDkXqtNSYs6CCQRVwskBEV+YwdGemkMKy5cdybZzTGC8bFhIkM9xKL3GzeZdfIzJk/gZaXsp/En9cCweQnBTKIb49AWiEyoXqqGnbZqsnbSW3K7PRgolPj0uMo5LR7HY19LOfp2ZVYNEu3eBlvzAYWcsOjcgbokjdPAZoVWUYWzQXgxEhMrcEcOYZTTsTBhSbHL04LNBEtqIe7ZBYchm9x1GjbQ3zn/XslKt3zPApwunGUyp5v5R1dM7NuGfMSFEMm8p+WI/qSifEVUE96F8DxEn5fuzuGkWtfO7jVHkONqzOf5cuxpemqLF9AKQNjQs0/0+7QfBxRVua1GXQyc=
+  app: shrouded-basin-72704
+  on:
+    repo: codyirving/react-hot-cold
